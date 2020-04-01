@@ -13,6 +13,7 @@ RUN pip install QtPy
 RUN pip install matplotlib
 RUN apt-get update
 RUN apt-get install -y libgl1-mesa-dev
+RUN export QT_DEBUG_PLUGINS=1
 COPY . .
 
 
