@@ -11,7 +11,8 @@ RUN pip install python-qt
 RUN pip install QDarkStyle
 RUN pip install QtPy
 RUN pip install matplotlib
-RUN apt install libgl1-mesa-glx
+RUN apt-get update
+RUN apt-get install -y libgl1-mesa-dev
 COPY . .
 
 
