@@ -12,4 +12,7 @@ RUN pip install QDarkStyle
 RUN pip install QtPy
 COPY . .
 
+RUN apt-get update
+RUN apt-get install -y libgl1-mesa-dev
+
 CMD [ "python", "./DesktopApp/interface.py" ]
