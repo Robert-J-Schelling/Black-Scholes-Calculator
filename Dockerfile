@@ -1,7 +1,5 @@
 FROM ubuntu:18.04
 
-MAINTAINER fadawar <fadawar@gmail.com>
-
 # Add user
 RUN adduser --quiet --disabled-password qtuser
 
