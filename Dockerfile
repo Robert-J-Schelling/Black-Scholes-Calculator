@@ -14,6 +14,7 @@ WORKDIR /usr/src/app
 
 RUN pip install QDarkStyle
 RUN pip install matplotlib
+RUN pip install PyQt5
 RUN apt-get update
 RUN apt-get install -y libgl1-mesa-dev
 RUN apt-get install -y libxkbcommon-x11-0
