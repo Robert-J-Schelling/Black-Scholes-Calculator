@@ -1,4 +1,5 @@
 FROM ubuntu:18.04
+WORKDIR /usr/src/app
 # Add user
 RUN adduser --quiet --disabled-password qtuser
 
@@ -9,8 +10,6 @@ RUN apt-get update \
       python3-pyqt5
       
 FROM python:3
-
-WORKDIR /usr/src/app
 
 RUN pip install QDarkStyle
 RUN pip install matplotlib
