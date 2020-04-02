@@ -42,9 +42,8 @@ RUN apt-get update && apt-get dist-upgrade -y && apt-get install -y \
   zip \
   zlib1g-dev \
   cmake \
-  pyqt5-dev-tools \
-  python3-pip \
-  python3-dev \
+  python3 \
+  python3-pyqt5\
   libffi-dev \
   libssl-dev \
   xvfb \
