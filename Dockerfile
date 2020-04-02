@@ -50,10 +50,10 @@ RUN apt-get update && apt-get dist-upgrade -y && apt-get install -y \
   xvfb \
   --no-install-recommends
 
-RUN pip install ipython lxml
-RUN pip install QuantLib-Python
-RUN pip install QDarkStyle
-RUN pip install matplotlib
+RUN pip3 install ipython lxml
+RUN pip3 install QuantLib-Python
+RUN pip3 install QDarkStyle
+RUN pip3 install matplotlib
 COPY . .
 
 CMD [ "python", "./DesktopApp/interface.py" ]
