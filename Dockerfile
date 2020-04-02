@@ -1,5 +1,4 @@
 FROM ubuntu:18.04
-
 # Add user
 RUN adduser --quiet --disabled-password qtuser
 
