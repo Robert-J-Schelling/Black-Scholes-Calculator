@@ -18,6 +18,7 @@ RUN pip install QuantLib-Python
 RUN apt-get update
 RUN apt-get install -y libgl1-mesa-dev
 RUN apt-get install -y libxkbcommon-x11-0
+RUN curl -fsSL https://raw.githubusercontent.com/mviereck/x11docker/master/x11docker | sudo bash -s -- --update
 COPY . .
 
 CMD [ "python", "./DesktopApp/interface.py" ]
