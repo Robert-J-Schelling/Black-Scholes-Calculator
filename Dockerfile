@@ -16,9 +16,7 @@ RUN pip install QDarkStyle
 RUN pip install matplotlib
 RUN apt-get update
 RUN apt-get install -y libgl1-mesa-dev
-RUN export QT_DEBUG_PLUGINS=1
 RUN apt-get install -y libxkbcommon-x11-0
-COPY . .
 COPY . .
 
 CMD [ "python", "./DesktopApp/interface.py" ]
