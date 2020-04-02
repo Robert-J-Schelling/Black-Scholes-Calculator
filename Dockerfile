@@ -7,7 +7,7 @@ RUN pip install QuantLib-Python
 RUN apt-get update
 RUN apt-get install -y libgl1-mesa-dev
 RUN apt-get install -y libxkbcommon-x11-0
-RUN apt-get -qq update \
+RUN apt-get update \
     && apt-get install -y \
     bison \
     build-essential \
