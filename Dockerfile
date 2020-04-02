@@ -7,10 +7,6 @@ RUN pip install QuantLib-Python
 RUN apt-get update
 RUN apt-get install -y libgl1-mesa-dev
 RUN apt-get install -y libxkbcommon-x11-0
-
-FROM debian:buster-slim
-ARG DEBIAN_FRONTEND=noninteractive
-
 RUN apt-get update && apt-get install -y \
     ca-certificates \
     curl \
@@ -27,12 +23,6 @@ RUN apt-get update && apt-get install -y \
     xz-utils \
     --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
-
-ENV HOME /home/user
-RUN useradd --create-home --home-dir $HOME user \
-    && chown -R user:user $HOME
-
-ENV LANG C.UTF-8
 
 RUN apt-get update && \
     apt-get install -y python-pip \
