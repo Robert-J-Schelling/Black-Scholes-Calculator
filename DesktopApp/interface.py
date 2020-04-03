@@ -67,6 +67,7 @@ class MyTableWidget(QWidget):
         self.tabs.setCurrentIndex(index-1)
 
 if __name__ == '__main__':
+    print("Started")
     app = QApplication(sys.argv)
     app.setStyleSheet(qdarkstyle.load_stylesheet())
     ex = App()
