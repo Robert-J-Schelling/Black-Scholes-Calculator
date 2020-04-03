@@ -12,7 +12,7 @@ class BlackScholes():
         datetime_expiry_date = datetime.strptime(values_dict['expiry_date'], "%m/%d/%Y")
         spot_rate = (float(values_dict['spot_price']))
         strike_rate = (float(values_dict['strike_price']))
-        
+        print(str(strike_rate))
         domestic_interest_rate = (float(values_dict['domestic_interest'])/100)
         foreign_interest_rate = (float(values_dict['foreign_interest'])/100)
         volatility = (float(values_dict['volatility'])/100)
