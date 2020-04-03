@@ -52,7 +52,7 @@ class BlackScholes():
 
         european_option.setPricingEngine(engine)
 
-
+        print(str(float(european_option.NPV())))
         try:
             if(changed == "premium"):
                 return BlackScholes().floatrounding(premium), BlackScholes().floatrounding(float(european_option.delta())), BlackScholes().floatrounding(european_option.impliedVolatility(premium, garman_kohlagen_process,0.000000001)*100),False,day_count
