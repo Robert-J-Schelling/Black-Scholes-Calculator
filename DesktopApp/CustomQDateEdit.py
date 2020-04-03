@@ -13,6 +13,7 @@ class CustomQDateEdit(QDateEdit,IDs):
         self.qGridLayout = kwargs.get('qGridLayout',None)
         ID = kwargs.get('ID', None)
         QDateEdit.__init__(self, *args)
+        self.setDisplayFormat("dd.MM.yyyy")
         if(isOrange):
             self.setStyleSheet("color: Orange;")
         if(ID != None):
