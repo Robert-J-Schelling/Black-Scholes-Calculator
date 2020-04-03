@@ -6,6 +6,7 @@ from datetime import datetime
 
 class BlackScholes():
     async def set_values(values_dict):
+        print("Entered BlackScholes")
         datetime_start_date = datetime.strptime(values_dict['start_date'], "%m/%d/%Y")
         datetime_expiry_date = datetime.strptime(values_dict['expiry_date'], "%m/%d/%Y")
         spot_rate = (float(values_dict['spot_price']))
