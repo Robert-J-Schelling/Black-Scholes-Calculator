@@ -7,11 +7,12 @@ from datetime import datetime
 class BlackScholes():
     async def set_values(values_dict):
         print("Entered BlackScholes")
+        print(values_dict)
         datetime_start_date = datetime.strptime(values_dict['start_date'], "%m/%d/%Y")
         datetime_expiry_date = datetime.strptime(values_dict['expiry_date'], "%m/%d/%Y")
         spot_rate = (float(values_dict['spot_price']))
         strike_rate = (float(values_dict['strike_price']))
-
+        
         domestic_interest_rate = (float(values_dict['domestic_interest'])/100)
         foreign_interest_rate = (float(values_dict['foreign_interest'])/100)
         volatility = (float(values_dict['volatility'])/100)
