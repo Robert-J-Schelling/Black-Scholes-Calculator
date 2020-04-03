@@ -1,5 +1,5 @@
 FROM python:3
-WORKDIR /usr/src/app
+
 RUN pip install QDarkStyle
 RUN pip install matplotlib
 RUN pip install PyQt5
