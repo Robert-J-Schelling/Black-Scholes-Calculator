@@ -11,4 +11,4 @@ RUN apt-get update && apt-get install -y \
 ENV QT_DEBUG_PLUGINS=1
 COPY . .
 
-CMD [ "python", "./DesktopApp/interface.py" ]
+CMD [ "python","-u", "./DesktopApp/interface.py" ]
